@@ -1,4 +1,4 @@
-# Bus RusTransfer.org
+# BusRusTransfer.org
 
 ### Разработчик: Шахворостов Сергей
 
