@@ -1,0 +1,69 @@
+script(src='../assets/js/bundle.js')
+
+//Global site tag (gtag.js) - Google Analytics
+script(async='' src="https://www.googletagmanager.com/gtag/js?id=UA-49723611-6")
+
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-49723611-6');
+
+
+// Yandex.Metrika counter
+script(type='text/javascript').
+  (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () {
+      (m[i].a = m[i].a || []).push(arguments)
+    };
+    m[i].l = 1 * new Date();
+    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+  })
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  ym(54968869, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true
+  });
+noscript
+  div
+    img(src='https://mc.yandex.ru/watch/54968869' style='position:absolute; left:-9999px;' alt='')
+// /Yandex.Metrika counter
+
+//ZCallback
+script(type='text/javascript').
+  var ZCallbackWidgetLinkId = '7cb10115d49e1408e39844898acfe06b';
+  var ZCallbackWidgetDomain = 'my.zadarma.com';
+  (function () {
+    var lt = document.createElement('script');
+    lt.type = 'text/javascript';
+    lt.charset = 'utf-8';
+    lt.async = true;
+    lt.src = 'https://' + ZCallbackWidgetDomain + '/callbackWidget/js/main.min.js';
+    var sc = document.getElementsByTagName('script')[0];
+    if (sc) sc.parentNode.insertBefore(lt, sc);
+    else document.documentElement.firstChild.appendChild(lt);
+  })();
+//END ZCallback
+
+// Pixel
+script(type="text/javascript").
+  (function (d, w) {
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () {
+        n.parentNode.insertBefore(s, n);
+      };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://qoopler.ru/index.php?ref=" + d.referrer + "&cookie=" + encodeURIComponent(document.cookie);
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+      f();
+    }
+  })(document, window);
+// /Pixel

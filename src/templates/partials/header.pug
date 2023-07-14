@@ -1,0 +1,123 @@
+header.header.scrolling-navbar.wow.fadeIn(data-wow-delay='0.5' data-wow-duration='0.4')
+  .container.container__customized_md.container__customized_xl.header__line-red
+    nav.nav-menu(role='navigation')
+      .row
+        .col.nav-menu__logo_align-center
+          a.nav-menu__logo(href='/' role='banner')
+            +logo
+        .nav-menu__col-xl.nav-menu__block
+
+          ul.nav-menu__contact
+            li.nav-menu__contact_item
+              a.nav-menu__contact_mail(href='mailto:24@rustransfer.org' title='Обратная связь' role='link')
+                +mail
+                span 24@rustransfer.org
+
+            li.nav-menu__contact_item
+              +phone
+              a.nav-menu__contact_phone(href='tel:+78002004017' title='Сделать звонок' role='link')
+                span 8-800-200-4017
+
+            li.nav-menu__contact_item
+              a.nav-menu__contact_consul(href='#' title='' role='button' onclick="Marquiz.showModal('5e88a785a4ee0a0044b40634')") Получить консультацию
+
+          .nav-menu__button-collapse
+            button.hamburger.hamburger--spring(type='button' title='Открыть меню' role='button')
+              span.hamburger-box
+                span.hamburger-inner
+
+          .nav-menu__collapse
+            ul#magicLine.nav-menu__menu
+              li.nav-menu__menu_item
+                a(href='#about' title='' role='link') О нас
+
+              li.nav-menu__menu_item
+                a(href='#tariffs' title='' role='link') Тарифы
+
+              li.nav-menu__menu_item
+                a(href='#benefits' title='' role='link') Наши преимущества
+
+              li.nav-menu__menu_item
+                a(href='#how-make-order' title='' role='link') Как сделать заказ
+
+              li.nav-menu__menu_item
+                a(href='#activity' title='' role='link') Мероприятия
+
+              li.nav-menu__menu_item.nav-menu__menu_mr-15.current_page_item
+                a(href='#footer' title='' role='link') Контакты
+
+            ul.nav-menu__menu.nav-menu__menu_phones
+              li.nav-menu__menu_item
+                +phone-red
+                a(href='tel:+78002004017' title='Сделать звонок' role='link') +7-800-200-4017
+                span Круглосуточно
+
+              li.nav-menu__menu_item
+                +phone-red
+                a(href='tel:+74951283601' title='Сделать звонок' role='link') +7-495-128-3601
+                span Москва
+
+              li.nav-menu__menu_item
+                +phone-red
+                a(href='tel:+78126037550' title='Сделать звонок' role='link') +7-812-603-7550
+                span Санкт-Петербург
+
+              li.nav-menu__menu_item
+                +phone-red
+                a(href='tel:+78432070209' title='Сделать звонок' role='link') +7-843-207-0209
+                span Казань
+
+              li.nav-menu__menu_item
+                +phone-red
+                a(href='tel:+78622792425' title='Сделать звонок' role='link') +7-862-279-2425
+                span Сочи
+
+              li.nav-menu__menu_item
+                +phone-red
+                a(href='tel:+12023502717' title='Сделать звонок' role='link') +1-20-235-027-17
+                span Вашингтон
+
+              li.nav-menu__menu_item.nav-menu__menu_messangers
+                .nav-menu__menu_phones-messangers
+                  +phone-red
+                  a(href='tel:+79235008282' title='Сделать звонок' role='link') +7(923)500-82-82
+                .nav-menu__messangers
+                  span
+                    a(href='whatsapp://send?phone=+79235008282' title='' target='_blank')
+                      +whatsapp
+                  span
+                    a(href='viber://chat?number=+79235008282' title='' target='_blank')
+                      +viber
+                  span
+                    a.nav-menu__messangers_no-event(href='/' title='')
+                      +telegram
+
+            ul.nav-menu__menu.nav-menu__menu_feedback
+              li.nav-menu__menu_item
+                +mail-red
+                a(href='mailto:24@rustransfer.org' title='' role='link') 24@rustransfer.org
+
+              li.nav-menu__menu_item
+                +mail-red
+                a(href='mailto:a.kuleshov@rustransfer.org' title='' role='link') Обратная связь с генеральным директором
+
+              li.nav-menu__menu_item
+                +mail-red
+                a(href='mailto:org@rustransfer.org' title='' role='link') Обращение к комплайнс-контролеру
+
+            .nav-menu__menu_network
+              span
+                a(href='https://vk.com/rustransfer2019' title='Перейти в группу Рустрансфер Вконтакте' target='_blank' role='link')
+                  +vk
+              span
+                a(href='https://twitter.com/TransferRus' title='Перейти в группу Рустрансфер в Twitter' target='_blank' role='link')
+                  +twitter
+              span
+                a(href='https://www.instagram.com/rustransfers/' title='Перейти в группу Рустрансфер в Instagram' target='_blank' role='link')
+                  +instagram
+              span
+                a(href='https://www.facebook.com/rustransfers/?modal=admin_todo_tour' title='Перейти в группу Рустрансфер в Facebook' target='_blank' role='link')
+                  +facebook
+
+
+

@@ -1,0 +1,142 @@
+.no-standard {
+
+  width: 100%;
+  position: relative;
+  background: url("#{$way-img}non-standard/background.jpg")no-repeat center / cover;
+  padding-top: 150px;
+
+  @media only screen and (max-width: 1640px) {
+    background: url("#{$way-img}non-standard/background.jpg")no-repeat center right 15% / cover;
+  }
+
+  @media only screen and (max-width: 1410px) {
+    background: url("#{$way-img}non-standard/background.jpg")no-repeat center right 25% / cover;
+  }
+
+  @media only screen and (max-width: 992px) {
+    background: url("#{$way-img}non-standard/background.jpg")no-repeat center left / cover;
+  }
+
+  @media only screen and (max-width: 768px) {
+    background: url("#{$way-img}non-standard/background.jpg")no-repeat center / cover;
+  }
+
+  @media only screen and (max-width: 575px) {
+    background: url("#{$way-img}non-standard/background.jpg")no-repeat center left 20% / cover;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding-top: 100px;
+  }
+
+  h2 {
+
+    br {
+
+      display: none;
+
+      @media only screen and (max-width: 576px) {
+        display: block;
+      }
+
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin: auto;
+      display: block;
+    }
+
+  }
+
+  &:after {
+
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 777px;
+    height: 100%;
+    background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right 27% / contain;
+
+    @media only screen and (max-width: 1650px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -20px / contain;
+    }
+
+    @media only screen and (max-width: 1645px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -20px / contain;
+    }
+
+    @media only screen and (max-width: 1500px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -25px / contain;
+    }
+
+    @media only screen and (max-width: 1470px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -65px / 90%;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -105px / 90%;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -40px / 80%;
+    }
+
+    @media only screen and (max-width: 1120px) {
+      background: url("#{$way-img}non-standard/72bfbe90da53f9b72.png")no-repeat bottom right -90px / 80%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+
+  }
+
+  .title__line_small:before {
+
+    @media only screen and (max-width: 575px) {
+      display: block;
+    }
+
+  }
+
+  .text__middle {
+
+    @media only screen and (max-width: 575px) {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+  }
+
+  .button__wrapper {
+
+    &_hidden {
+
+      justify-content: center;
+      display: none;
+
+      @media only screen and (max-width: 576px) {
+        display: flex;
+      }
+
+      .button__large_red {
+
+        display: block;
+
+      }
+
+    }
+
+  }
+
+  .title__h2 {
+
+    @media only screen and (max-width: 380px) {
+      padding: 0 10px;
+    }
+
+  }
+
+}

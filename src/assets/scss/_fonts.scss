@@ -1,0 +1,438 @@
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Black';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-Black.eot');
+  src: local('HarmoniaSansProCyr-Black'), local('HarmoniaSansProCyr-Black'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Black.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Black.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Black.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-BoldIt';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldIt.eot');
+  src: local('HarmoniaSansProCyr-BoldIt'), local('HarmoniaSansProCyr-BoldIt'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldIt.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldIt.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldIt.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldIt.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-SemiBdIt';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdIt.eot');
+  src: local('HarmoniaSansProCyr-SemiBdIt'), local('HarmoniaSansProCyr-SemiBdIt'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdIt.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdIt.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdIt.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdIt.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Light';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-Light.eot');
+  src: local('HarmoniaSansProCyr-Light'), local('HarmoniaSansProCyr-Light'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Light.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Light.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-BlackIt';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-BlackIt.eot');
+  src: local('HarmoniaSansProCyr-BlackIt'), local('HarmoniaSansProCyr-BlackIt'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BlackIt.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BlackIt.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BlackIt.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BlackIt.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Bold';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-Bold.eot');
+  src: local('HarmoniaSansProCyr-Bold'), local('HarmoniaSansProCyr-Bold'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Bold.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Bold.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-LightIt';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-LightIt.eot');
+  src: local('HarmoniaSansProCyr-LightIt'), local('HarmoniaSansProCyr-LightIt'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-LightIt.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-LightIt.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-LightIt.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-LightIt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-BoldCond';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldCond.eot');
+  src: local('HarmoniaSansProCyr-BoldCond'), local('HarmoniaSansProCyr-BoldCond'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldCond.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldCond.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldCond.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-BoldCond.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-Italic';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-Italic.eot');
+  src: local('HarmoniaSansProCyr-Italic'), local('HarmoniaSansProCyr-Italic'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Italic.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Italic.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Italic.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-SemiBd';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBd.eot');
+  src: local('HarmoniaSansProCyr-SemiBd'), local('HarmoniaSansProCyr-SemiBd'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBd.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBd.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBd.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBd.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-Regular';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-Regular.eot');
+  src: local('HarmoniaSansProCyr-Regular'), local('HarmoniaSansProCyr-Regular'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Regular.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Regular.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-SemiBdCn';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdCn.eot');
+  src: local('HarmoniaSansProCyr-SemiBdCn'), local('HarmoniaSansProCyr-SemiBdCn'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdCn.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdCn.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdCn.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-SemiBdCn.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+
+  font-family: 'HarmoniaSansProCyr-Cond';
+  font-display: auto;
+  src: url('#{$way-font-harmonia}/HarmoniaSansProCyr-Cond.eot');
+  src: local('HarmoniaSansProCyr-Cond'), local('HarmoniaSansProCyr-Cond'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Cond.eot?#iefix') format('embedded-opentype'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Cond.woff2') format('woff2'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Cond.woff') format('woff'),
+  url('#{$way-font-harmonia}/HarmoniaSansProCyr-Cond.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Verdana
+@font-face {
+
+  font-family: "Verdana-Pro-Light";
+  font-display: auto;
+  font-weight: 300;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-Light.eot");
+  src: local('Verdana-Pro-Light'),
+  url("#{$verdana-font-path}VerdanaPro-Light.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-Light.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-Light.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-LightItalic";
+  font-display: auto;
+  font-weight: 300;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-LightItalic.eot");
+  src: local('Verdana-Pro-LightItalic'),
+  url("#{$verdana-font-path}VerdanaPro-LightItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-LightItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-Cond-Light";
+  font-display: auto;
+  font-weight: 300;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-CondLight.eot");
+  src: local('Verdana-Pro-Cond-Light'),
+  url("#{$verdana-font-path}VerdanaPro-CondLight.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondLight.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondLight.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-Italic";
+  font-display: auto;
+  font-weight: normal;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-Italic.eot");
+  src: local('Verdana-Pro-Italic'),
+  url("#{$verdana-font-path}VerdanaPro-Italic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-Italic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-Italic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondItalic";
+  font-display: auto;
+  font-weight: normal;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-CondItalic.eot");
+  src: local('Verdana-Pro-CondItalic'),
+  url("#{$verdana-font-path}VerdanaPro-CondItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondLightItalic";
+  font-display: auto;
+  font-weight: 300;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-CondLightItalic.eot");
+  src: local('Verdana-Pro-CondLightItalic'),
+  url("#{$verdana-font-path}VerdanaPro-CondLightItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondLightItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-Regular";
+  font-display: auto;
+  font-weight: normal;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-Regular.eot");
+  src: local('Verdana-Pro-Regular'),
+  url("#{$verdana-font-path}VerdanaPro-Regular.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-Regular.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondRegular";
+  font-display: auto;
+  font-weight: normal;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-CondRegular.eot");
+  src: local('Verdana-Pro-CondRegular'),
+  url("#{$verdana-font-path}VerdanaPro-CondRegular.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondRegular.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondRegular.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-SemiBold";
+  font-display: auto;
+  font-weight: 600;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-SemiBold.eot");
+  src: local('Verdana-Pro-SemiBold'),
+  url("#{$verdana-font-path}VerdanaPro-SemiBold.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-SemiBold.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-SemiBoldItalic";
+  font-display: auto;
+  font-weight: 600;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-SemiBoldItalic.eot");
+  src: local('Verdana-Pro-SemiBoldItalic'),
+  url("#{$verdana-font-path}VerdanaPro-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-SemiBoldItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondSemiBold";
+  font-display: auto;
+  font-weight: 600;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-CondSemiBold.eot");
+  src: local('Verdana-Pro-CondSemiBold'),
+  url("#{$verdana-font-path}VerdanaPro-CondSemiBold.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondSemiBold.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondSemiBold.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondSemiBoldItalic";
+  font-display: auto;
+  font-weight: 600;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-CondSemiBoldItalic.eot");
+  src: local('Verdana-Pro-CondSemiBoldItalic'),
+  url("#{$verdana-font-path}VerdanaPro-CondSemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondSemiBoldItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondSemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-Bold";
+  font-display: auto;
+  font-weight: bold;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-Bold.eot");
+  src: local('Verdana-Pro-Bold'),
+  url("#{$verdana-font-path}VerdanaPro-Bold.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-Bold.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-BoldItalic";
+  font-display: auto;
+  font-weight: bold;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-BoldItalic.eot");
+  src: local('Verdana-Pro-BoldItalic'),
+  url("#{$verdana-font-path}VerdanaPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-BoldItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondBold";
+  font-display: auto;
+  font-weight: bold;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-CondBold.eot");
+  src: local('Verdana-Pro-CondBold'),
+  url("#{$verdana-font-path}VerdanaPro-CondBold.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondBold.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondBold.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondBoldItalic";
+  font-display: auto;
+  font-weight: bold;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-CondBoldItalic.eot");
+  src: local('Verdana-Pro-CondBoldItalic'),
+  url("#{$verdana-font-path}VerdanaPro-CondBoldItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondBoldItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-Black";
+  font-display: auto;
+  font-weight: 900;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-Black.eot");
+  src: local('Verdana-Pro-Black'),
+  url("#{$verdana-font-path}VerdanaPro-Black.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-Black.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-Black.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-BlackItalic";
+  font-display: auto;
+  font-weight: 900;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-BlackItalic.eot");
+  src: local('Verdana-Pro-BlackItalic'),
+  url("#{$verdana-font-path}VerdanaPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-BlackItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondBlack";
+  font-display: auto;
+  font-weight: 900;
+  font-style: normal;
+  src: url("#{$verdana-font-path}VerdanaPro-CondBlack.eot");
+  src: local('Verdana-Pro-CondBlack'),
+  url("#{$verdana-font-path}VerdanaPro-CondBlack.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondBlack.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondBlack.ttf") format("truetype");
+}
+
+@font-face {
+
+  font-family: "Verdana-Pro-CondBlackItalic";
+  font-display: auto;
+  font-weight: 900;
+  font-style: italic;
+  src: url("#{$verdana-font-path}VerdanaPro-CondBlackItalic.eot");
+  src: local('Verdana-Pro-CondBlackItalic'),
+  url("#{$verdana-font-path}VerdanaPro-CondBlackItalic.eot?#iefix") format("embedded-opentype"),
+  url("#{$verdana-font-path}VerdanaPro-CondBlackItalic.woff") format("woff"),
+  url("#{$verdana-font-path}VerdanaPro-CondBlackItalic.ttf") format("truetype");
+}
+
+

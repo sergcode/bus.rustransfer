@@ -1,0 +1,23 @@
+.wrapper {
+
+  &__line {
+
+    @include flex-center-wrap();
+    position: relative;
+
+  }
+
+  &__title {
+
+    color: $black-color-two;
+
+    &_center {
+
+      text-align: center;
+      justify-content: center;
+
+    }
+
+  }
+
+}

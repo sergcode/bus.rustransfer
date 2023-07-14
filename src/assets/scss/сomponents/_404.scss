@@ -1,0 +1,215 @@
+.body {
+
+  &__404 {
+
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    @media only screen and (max-width: 992px) {
+      height: 100%;
+    }
+
+  }
+
+}
+
+.main {
+
+  &__404 {
+
+    height: 100%;
+    position: relative;
+    background-image: url("#{$way-img}404-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+    }
+
+  }
+
+}
+
+.header__404 {
+  width: 100vw;
+  position: relative;
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 40px;
+  }
+}
+
+
+.container {
+
+  &__customized {
+
+    &_404 {
+
+      position: relative;
+
+    }
+
+  }
+
+}
+
+.content-404 {
+
+  position: relative;
+  @include flex-center-wrap;
+  width: 100vw;
+
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 80px;
+  }
+
+  &__wrapper {
+
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+
+    @media only screen and (max-width: 1280px) {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    article {
+
+      figure {
+
+        @include flex-center-wrap;
+        justify-content: center;
+        text-align: center;
+
+        a.text {
+
+          text-decoration: underline;
+
+          &:hover {
+
+            color: $white-color-one;
+            text-decoration: none;
+
+          }
+        }
+
+        figcaption {
+
+          @media only screen and (max-width: 992px) {
+            padding-left: 10%;
+            padding-right: 10%;
+          }
+
+          @media only screen and (max-width: 576px) {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          div.text {
+
+            visibility: hidden;
+            @media only screen and (max-width: 992px) {
+              visibility: visible;
+            }
+
+          }
+
+          .button {
+
+            visibility: hidden;
+
+            @media only screen and (max-width: 992px) {
+              visibility: visible;
+            }
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+  &__img {
+
+    position: relative;
+
+    img {
+
+      position: relative;
+      width: 100%;
+      visibility: hidden;
+
+      @media only screen and (max-width: 992px) {
+        visibility: visible;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: 576px) {
+        width: 70%;
+      }
+
+    }
+
+  }
+
+  &__title {
+
+    font-family: $font-family-bold;
+    font-size: 48px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: $red-color-one;
+    padding-bottom: 1.5rem;
+    padding-top: 56px;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 40px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      font-size: 35px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 30px;
+      padding-top: 26px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 300px) {
+      font-size: 18px;
+    }
+
+    p {
+
+      visibility: hidden;
+      @media only screen and (max-width: 992px) {
+        visibility: visible;
+      }
+
+    }
+
+  }
+
+}
+

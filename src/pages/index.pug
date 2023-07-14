@@ -1,0 +1,410 @@
+extends ../templates/layouts/default
+
+block vars
+  -
+    title = 'Home'
+    stylePath=''
+
+block content
+  .main.wow.fadeIn(role='main', data-wow-delay='0', data-wow-duration='0.4')
+    section.header-content(role="region")
+      .header-content__main
+        .container.container__customized_md.container__customized_xl.container__customized_relative
+          .header-content__main-block
+            p.very-big-text.wow.fadeInLeft(data-wow-delay='0.5s', data-wow-duration='0.4s')
+              | Трансфер
+            .title.title_pt-3
+
+              // Вертикальный текст
+              .header-content__arrow-down.wow.fadeInLeft(data-wow-delay='0.6s', data-wow-duration='0.4s')
+                .text__middle.text__middle_light.text_uppercase.header-content__arrow-down-text.text_white
+                  | более 10 классов автомобилей
+                +arrow-down
+
+              // Белый большой текст
+              .title__block.flex-column
+                .title.title__h1.title_uppercase.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+                  | Трансфер и аренда
+                  br
+                  | автотранспорта с водителем
+                p.text__huge_middle.text_grey-one.text_pr-55.text_mt.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s')
+                  | Новые автобусы до 50 мест&nbsp;
+                  br
+                  | Микроавтобусы до 20 мест&nbsp;
+                  br
+                  | Минивэны до 7 мест&nbsp;
+                  br
+                  | Легковые автомобили&nbsp;
+                  br
+                  | для корпоративных и частных клиентов
+
+                +button-middle-showquiz('Получить расчет', 'button')
+
+          // Блок с набегающими цыфрами
+          .header-content__number-block
+            .row
+              .header-content__number-block_col-custom.col-lg-2.wow.fadeInRight(data-wow-delay='0.7s', data-wow-duration='0.4s')
+                .numbers-block
+                  .numbers-block__svg-icon
+                    +timer
+                    img(src='../assets/img/header/arrow-down-right.png' alt='')
+                  .numbers-block__theme
+                    .numbers-block__counter
+                      .counter(data-counterup-time="200" data-counterup-delay="1.5") 5
+                      span.numbers-block__text_middle мин
+                    .numbers-block__description Средний срок
+                      br
+                      | ответа на запрос
+
+              .header-content__number-block_col-custom.col-lg-2.wow.fadeInRight(data-wow-delay='0.8s', data-wow-duration='0.4s')
+                .numbers-block
+                  .numbers-block__svg-icon
+                    +hours
+                    img(src='../assets/img/header/arrow-down-right.png' alt='')
+                  .numbers-block__theme
+                    .numbers-block__counter
+                      .counter(data-counterup-time="500" data-counterup-delay="2") 24
+                      span /
+                      .counter(data-counterup-time="500" data-counterup-delay="2") 7
+                    .numbers-block__description Круглосуточная поддержка Ru/En
+
+              .header-content__number-block_col-custom.col-lg-2.wow.fadeInRight(data-wow-delay='0.9s', data-wow-duration='0.4s')
+                .numbers-block
+                  .numbers-block__svg-icon
+                    +man
+                    img(src='../assets/img/header/arrow-down-right.png' alt='')
+                  .numbers-block__theme
+                    .numbers-block__counter
+                      .counter(data-counterup-time="500" data-counterup-delay="2.5") 97
+                      span %
+                    .numbers-block__description ДОВОЛЬНЫХ
+                      br
+                      | КЛИЕНТОВ
+
+          // Форма - получить расчет
+          +form-head
+
+      // Волны внизу главного экрана
+      .wave.wave__blue
+
+    section#about.bus-rent.bus-rent__bg_map(role="region")
+      .title__justify_center
+        .title__wrapper.text_center.title__line.title__line_right.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          .container.container__customized_xs.container__customized_xl
+            h1.title.title__h2.title__bg_white АРЕНДА АВТОБУСОВ И МИКРОАВТОБУСОВ
+        p.text.text__large-subtitle.text_center.text_pb-45.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s') Для любых целей и мероприятий в России и зарубежом
+      .container.container__customized_md.container__customized_xl
+        .bus-rent__wrapper
+          .bus-rent__list.wow.fadeInLeft(data-wow-delay='0.5s', data-wow-duration='0.4s')
+            ul.text.text__large.text__large_bold.text_right.bus-rent__list_right
+              li
+                span Трансферы
+              li
+                span Междугородние поездки
+              li
+                span Корпоративные мероприятия
+              li
+                span Обслуживание делегаций
+              li
+                span Свадебные торжества
+              li
+                span Шоппинг-туры и т.д
+
+          .bus-rent__block-center.wow.fadeIn(data-wow-delay='0.5s', data-wow-duration='0.4s')
+            .bus-rent__block-center_wrapper
+              img(src='../assets/img/bus-rent/girl.jpg' alt='')
+
+          .bus-rent__list.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+            ul.text.text__large.text__large_bold.text_left.bus-rent__list_left
+              li
+                span Спортивные мероприятия
+              li
+                span Международные перевозки
+              li
+                span Гастрольные туры
+              li
+                span Перевозка сотрудников
+              li
+                span Экскурсии
+              li
+                span Выезды на природу
+
+        +button-large('Получить расчет стоимости', 'button', 'button__wrapper_center button_pb-2')
+
+        p.text.text__middle.text_pb-8.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          | Оставьте заявку и в обратном письме получите PDF-файл
+          br
+          | со стандартами качества оказываемых услуг
+      .wave.wave__grey
+        .container.container__customized_xl.container__customized_relative.container__customized_height-100
+          img.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s' src='../assets/img/bus-rent/minibus-one.png' alt='')
+
+    section#tariffs.vehicle-options(role="region")
+      .title__justify_center
+        .title__wrapper.text_center.title__line.title__line_left.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          .container.container__customized_xs.container__customized_xl
+            h2.title.title__h2.title__bg_white.title__bg_grey ВЫБЕРИТЕ ВАРИАНТЫ АВТОТРАНСПОРТА
+        p.text.text__large-subtitle.text_center.text_pb-70.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s') ТОЧНО ПОДХОДЯЩИЕ ПОД ВАШЕ МЕРОПРИЯТИЕ ИЛИ ЗАДАЧУ
+
+      .container.container__customized_xl.container__customized_md
+        .row.justify-content-center
+          include ../templates/mixins/components/tariffs/tariffs
+          .owl-carousel.owl-theme.owl-carousel-tariffs
+            include ../templates/mixins/components/tariffs/tariffs-owl-carousel
+
+    section#benefits.benefits(role="region")
+      .title__justify_center.text_mb-70
+        .title__wrapper.text_center.title__line.title__line_left.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          .container.container__customized_xs.container__customized_xl
+            h2.title.title__h2.title__bg_white ВКЛЮЧЕНО В ПАКЕТ СТАНДАРТНОГО ПРЕДЛОЖЕНИЯ
+
+      .container.container__customized_xl.container__customized_md
+        .row.justify-content-center
+          .benefits__col-custom.col-lg.mb-4
+            .benefits__block.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+              article(role='article')
+                figure
+                  .benefits__img-car
+                    +personal-manager
+                  figcaption.benefits__line.text_center
+                    h4.title.title__h4.benefits__title
+                      | Персональный менеджер
+                    p.text.text__middle_less.benefits__small-text
+                      | Поможет быстрому решению текущих вопросов&nbsp;
+                      br
+                      | и рабочих моментов
+
+              .benefits__line-red
+
+          .benefits__col-custom.col-lg.mb-4
+            .benefits__block.wow.fadeInUp(data-wow-delay='0.6s', data-wow-duration='0.4s')
+              article(role='article')
+                figure
+                  .benefits__img-car
+                    +email
+                  figcaption.benefits__line.text_center
+                    h4.title.title__h4.benefits__title
+                      | Информационное сопровождение
+                    p.text.text__middle_less.benefits__small-text
+                      | SMS, e-mail, автодозвоны, маршрутные квитанции, данные об экипаже, контроль подачи автотранспорта
+
+              .benefits__line-red
+
+          .benefits__col-custom.col-lg.mb-4
+            .benefits__block.wow.fadeInUp(data-wow-delay='0.7s', data-wow-duration='0.4s')
+              article(role='article')
+                figure
+                  .benefits__img-car
+                    +cars
+                  figcaption.benefits__line.text_center
+                    h4.title.title__h4.benefits__title
+                      | 10 КЛАССОВ АВТОТРАНСПОРТА
+                    p.text.text__middle_less.benefits__small-text
+                      | На выбор автомобили, минивэны, микроавтобусы, автобусы от эконома до представительского&nbsp;
+                      br
+                      | и VIP класса.
+
+              .benefits__line-red
+
+          .benefits__col-custom.col-lg.mb-4
+            .benefits__block.wow.fadeInUp(data-wow-delay='0.8s', data-wow-duration='0.4s')
+              article(role='article')
+                figure
+                  .benefits__img-car
+                    +ekipag
+                  figcaption.benefits__line.text_center
+                    h4.title.title__h4.benefits__title
+                      | ОпытныЙ&nbsp;
+                      br
+                      | экипаж
+                    p.text.text__middle_less.benefits__small-text
+                      | Профессиональные водители со стажем от 5 лет&nbsp;
+                      br
+                      | без вредных привычек
+
+              .benefits__line-red
+
+          .benefits__col-custom.col-lg.mb-4
+            .benefits__block.wow.fadeInUp(data-wow-delay='0.9s', data-wow-duration='0.4s')
+              article(role='article')
+                figure
+                  .benefits__img-car
+                    +uslugi
+                  figcaption.benefits__line.text_center
+                    h4.title.title__h4.benefits__title
+                      | УСЛУГИ &nbsp;
+                      br
+                      | БЕЗ РИСКА
+                    p.text.text__middle_less.benefits__small-text
+                      | Если Вы не удовлетворены услугами, обратитесь в службу поддержки и мы без лишних вопросов вернем
+                      | Вам деньги или предоставим компенсацию
+
+              .benefits__line-red
+
+    section#how-make-order.how-make-order(role="region")
+
+      .title__justify_center.text_mb-55
+        .title__wrapper.text_center.title__line.title__line_right.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          h2.title.title__h2.title__bg_white Как сделать заказ
+
+      .container.container__customized_xl.container__customized_md
+        .row.justify-content-center.how-make-order__parent
+          .how-make-order__wrapper-item.col-lg-3.active.old
+            // Обертка с номером 01
+            .how-make-order__number.how-make-order__number_grayscale.wow.fadeInUp(data-wow-delay='0.6s', data-wow-duration='0.4s')
+              p.text__very-huge 01
+              // Блок с текстом
+              .how-make-order__block
+                article(role='article')
+                  figure
+                    figcaption.title.title__h4.title_pb-03 Оформите заявку
+                    figcaption.text.text__middle_less
+                      | Заполните заявку&nbsp;
+                      a(href='#footer' title='' role='link') удобным способом&nbsp;
+                      br
+                      | за 1 минуту, и ожидайте ответа нашего&nbsp;
+                      br
+                      | специалиста до 10 минут
+
+          .how-make-order__wrapper-item.col-lg-3
+            .how-make-order__number.how-make-order__number_grayscale.wow.fadeInUp(data-wow-delay='0.7s', data-wow-duration='0.4s')
+              p.text__very-huge 02
+              .how-make-order__block
+                article(role='article')
+                  figure
+                    figcaption.title.title__h4.title_pb-03 Подберите вариант
+                    figcaption.text.text__middle_less
+                      | Выберите или согласуйте&nbsp;
+                      a(href='#tariffs' title='' role='link')
+                        | подходящий&nbsp;
+                        br
+                        | по классу&nbsp;
+                      | и бюджету&nbsp;
+                      br
+                      | автомобиль
+
+          .how-make-order__wrapper-item.col-lg-3
+            .how-make-order__number.how-make-order__number_grayscale.wow.fadeInUp(data-wow-delay='0.8s', data-wow-duration='0.4s')
+              p.text__very-huge 03
+              .how-make-order__block
+                article(role='article')
+                  figure
+                    figcaption.title.title__h4.title_pb-03 Получите расчет
+                    figcaption.text.text__middle_less
+                      | Внесите оплату для бронирования&nbsp;
+                      br
+                      | выбранного вами автомобиля&nbsp;
+                      br
+                      | удобным способом
+
+          .how-make-order__wrapper-item.col-lg-3
+            .how-make-order__number.how-make-order__number_grayscale.wow.fadeInUp(data-wow-delay='0.9s', data-wow-duration='0.4s')
+              p.text__very-huge 04
+              .how-make-order__block
+                article(role='article')
+                  figure
+                    figcaption.title.title__h4.title_pb-03 Подача АВТОМОБИЛЯ
+                    figcaption.text.text__middle_less
+                      | Экипаж прибудет по указанному адресу&nbsp;
+                      br
+                      | за 5 минут до назначенного времени и&nbsp;
+                      br
+                      | доставит к месту назначения
+
+
+        .row.how-make-order__progress
+          .how-make-order__line-red.wow.fadeInRight(data-wow-delay='0.4s', data-wow-duration='0.4s')
+
+          .col-lg-3.how-make-order__car-wrapper
+            .how-make-order__car.wow.fadeInLeft(data-wow-delay='0.4s', data-wow-duration='0.4s')
+              img(src='/assets/img/how-make-order/2014-mercedes-benz-cls-class-amg-sedan-side-view.png' alt='')
+
+    section.no-standard(role="region")
+      .title__justify_center.text_mb-35
+        .title__wrapper.text_left.title__line.title__line_small.title__line_left.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          .container.container__customized_xl.container__customized_sm
+            h2.title.title__h2.title__h2_pa-0
+              | У вас нестандартный&nbsp;
+              br
+              | запрос?
+
+      .container.container__customized_xl.container__customized_sm
+        p.text.text__middle.text_pr-40.text_mb-35.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s')
+          | Свяжитесь с нами или оставьте заявку на сайте! Наш специалист уточнит детали, направит коммерческое
+          | предложение, согласует с Вами условия, посоветует оптимальные решения Ваших задач. А в обратном письме
+          | Вы получите чек-лист, позволяющий сделать быстро и профессионально оценку надежности поставщика
+          | автотранспортных услуг.
+
+        +form-horizontal
+        +button-large-middle-form('Расчет стоимости', 'button', '')
+
+    section#activity.activity(role="region")
+      .title__justify_center.text_mb-70
+        .title__wrapper.text_center.title__line.title__line_left.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          .container.container__customized_xs.container__customized_xl
+            h2.title.title__h2.title__bg_white.title__bg_white
+              | АВТОТРАНСПОРТНОЕ ОБСЛУЖИВАНИЕ&nbsp;
+              br
+              | МЕРОПРИЯТИЙ В РОССИИ И ЗА РУБЕЖОМ
+
+        p.text.text__large-subtitle.text_center.text_pb-70.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s') первокласный сервис для ваших гостей и участников
+
+        +owl-carousel-activity
+
+        +button-large-middle-less('Запросить условия', 'button', 'button_center')
+
+    section.important-customer(role="region")
+      .title__justify_center.text_mb-35
+        .title__wrapper.text_left.title__line.title__line_small.title__line_left.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          .container.container__customized_xl.container__customized_sm
+            h2.title.title__h2.text_white.title__h2_pa-0 СТАНЬТЕ САМЫМ ВаЖНЫМ НАШИМ КЛИЕНТОМ
+
+      .container.container__customized_xl.container__customized_sm
+        p.text.text__middle.text_white.text_pr-30.text_mb-55.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s')
+          | Во всех городах России и за рубежом, где Вы или Ваши клиенты хотят воспользоваться автомобильным
+          | транспортом, мы сможем помочь. Оставляйте заявку на сайте и получайте удовольствие от работы с нами.
+
+        .row.important-customer__block-icon.important-customer_pr-30
+          .col-sm-6.col-md-6.col-lg-6
+            article.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s' role='article')
+              figure
+                .important-customer__block-icon_icon
+                  +document
+                figcaption
+                  p.text_white
+                    | Быстро и на понятных условиях заключим договор на русском и/или английском языке без проволочек,
+                    | бюрократии и «скрытых» требований
+          .col-sm-6.col-md-6.col-lg-6
+            article.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s' role='article')
+              figure
+                .important-customer__block-icon_icon
+                  +call-center
+                figcaption
+                  p.text_white
+                    | Персональный менеджер, закрепленный за Вашей компанией, будет способствовать быстрому решению
+                    | текущих вопросов и рабочих моментов
+          .col-sm-6.col-md-6.col-lg-6
+            article.wow.fadeInRight(data-wow-delay='0.7s', data-wow-duration='0.4s' role='article')
+              figure
+                .important-customer__block-icon_icon
+                  +like
+                figcaption
+                  p.text_white
+                    | Предложим Вам выгодные условия сотрудничества и гарантированное исполнение обязательств на
+                    | высоком уровне качества
+          .col-sm-6.col-md-6.col-lg-6
+            article.wow.fadeInRight(data-wow-delay='0.8s', data-wow-duration='0.4s' role='article')
+              figure
+                .important-customer__block-icon_icon
+                  +computer
+                figcaption
+                  p.text_white
+                    | Высокотехнологичная система онлайн бронирования и дополнительные сервисы обеспечат
+                    | высокую степень автоматизации и прозрачности всех бизнес-процессов
+
+        +form-horizontal-white('form-horizontal__input-theme_white', 'form-check-input_white checked-black jq-checkbox_white')
+        +button-large-middle-form('Стать клиентом', 'button', '')
+
+
+
+

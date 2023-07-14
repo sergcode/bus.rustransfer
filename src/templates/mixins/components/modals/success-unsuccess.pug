@@ -1,0 +1,26 @@
+mixin modal-success
+  #modalSuccess.modal.modal_theme.fade.modal__theme(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog__width.modal-dialog-centered(role="document")
+      .modal-content.modal-sending-message
+        .modal-body
+          article
+            figure
+              +successfully
+              figcaption.modal-sending-message__title Спасибо!
+              figcaption.modal-sending-message__subtitle Ваша заявка отправлена!
+              figcaption.modal-sending-message__text-small Наш специалист свяжется с Вами в ближайшее время
+              figcaption
+                button.button.button__small_red(data-dismiss="modal" role='button') OK
+
+mixin modal-unsuccess
+  #modalFailure.modal.modal_theme.fade.modal__theme(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+    .modal-dialog.modal-dialog__width.modal-dialog-centered(role="document")
+      .modal-content.modal-sending-message
+        .modal-body
+          article
+            figure
+              +unsuccessfully
+              figcaption.modal-sending-message__title Не удалось
+              figcaption.modal-sending-message__subtitle Отправить вашу заявку
+              figcaption.modal-sending-message__text-small Пожалуйста, попробуйте еще раз
+                button.button.button__small_red(data-dismiss="modal" role='button') OK

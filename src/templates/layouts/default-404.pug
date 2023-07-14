@@ -1,0 +1,20 @@
+doctype html
+
+block vars
+
+html(lang="en")
+  head
+    include ../partials/head
+  body.body__404
+
+    // Google Tag Manager (noscript)
+    noscript
+      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-52Q7XN4" height="0" width="0" style="display:none;visibility:hidden")
+    // End Google Tag Manager (noscript)
+
+    //== Mixins ==//
+    include ../../templates/mixins/mixins
+    //== END Mixins ==//
+
+    block content
+    include ../../templates/partials/footer

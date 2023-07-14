@@ -1,0 +1,460 @@
+.how-make-order {
+
+  width: 100%;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 3rem;
+  background-color: $white-color-one;
+
+  @media only screen and (max-width: 575px) {
+    padding-top: 50px;
+  }
+
+  &__wrapper-item {
+
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
+
+    @media only screen and (max-width: 1024px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+      height: 170px;
+      min-height: 170px;
+      max-height: 170px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      flex: 0 0 90%;
+      max-width: 90%;
+    }
+
+    @media only screen and (max-width: 380px) {
+      margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 320px) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    &.active {
+
+      .how-make-order__number_grayscale {
+
+        transition: all .5s ease-in-out;
+
+        .text__very-huge {
+
+          color: $grey-color-rgba-three;
+          transform: scale(1.2);
+          transition: all .5s ease-in-out;
+
+          @media only screen and (max-width: 1280px) {
+            transform: scale(1.1);
+          }
+
+          @media only screen and (max-width: 1024px) {
+            transform: scale(1.15);
+          }
+
+          @media only screen and (max-width: 768px) {
+            transform: scale(1.2);
+          }
+
+        }
+
+        figcaption {
+
+          color: inherit;
+          transition: all .5s ease-in-out;
+
+          &:first-child {
+
+            font-size: 24px;
+
+            @media only screen and (max-width: 1640px) {
+              font-size: 20px;
+            }
+
+            @media only screen and (max-width: 1280px) {
+              font-size: 17px;
+            }
+
+            @media only screen and (max-width: 1024px) {
+              font-size: 20px;
+            }
+
+          }
+
+          &:last-child {
+
+            font-size: 14px;
+
+            @media only screen and (max-width: 1280px) {
+              font-size: 12px;
+            }
+
+            @media only screen and (max-width: 1024px) {
+              font-size: 14px;
+            }
+
+          }
+
+          a {
+
+            color: inherit;
+            pointer-events: auto;
+
+            @media only screen and (max-width: 1024px) {
+              font-size: 14px;
+            }
+
+          }
+
+        }
+
+        .how-make-order__block {
+
+          border-left: 4px solid $red-color-one;
+          transition: all .5s ease-in-out;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__number {
+
+    position: relative;
+    height: 170px;
+    min-height: 170px;
+    max-height: 170px;
+    visibility: hidden;
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+    }
+
+    &_grayscale {
+
+      transition: all .5s ease-in-out;
+
+      .text__very-huge {
+
+        font-size: 170px;
+        transform: scale(1);
+        min-height: 170px;
+        max-height: 170px;
+        transition: all .5s ease-in-out;
+        text-align: center;
+
+        @media only screen and (max-width: 1640px) {
+          margin-left: -57%;
+        }
+
+        @media only screen and (max-width: 1280px) {
+          font-size: 140px;
+          margin-left: -30%;
+        }
+
+        @media only screen and (max-width: 1024px) {
+          margin-left: -60%;
+          color: $grey-color-rgba-three !important;
+          transform: scale(1.15) !important;
+        }
+
+        @media only screen and (max-width: 991px) {
+          margin-left: -50%;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-left: -50%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          margin-left: -45%;
+        }
+
+        @media only screen and (max-width: 576px) {
+          margin-left: -65%;
+        }
+
+        @media only screen and (max-width: 480px) {
+          margin-left: -55%;
+        }
+
+        @media only screen and (max-width: 440px) {
+          margin-left: -50%;
+        }
+
+        @media only screen and (max-width: 380px) {
+          margin-left: -50%;
+        }
+
+        @media only screen and (max-width: 320px) {
+          margin-left: -40%;
+        }
+
+      }
+
+      figure {
+
+        margin: 0;
+
+      }
+
+      figcaption {
+
+        color: $grey-color-eight;
+        transition: all .5s ease-in-out;
+
+        @media only screen and (max-width: 1024px) {
+          color: inherit !important;
+        }
+
+        br {
+
+          @media only screen and (max-width: 1640px) {
+            display: none;
+          }
+
+          @media only screen and (max-width: 480px) {
+            display: block;
+          }
+
+          @media only screen and (max-width: 440px) {
+            display: none;
+          }
+
+        }
+
+        &:first-child {
+
+          font-size: 20px;
+
+          @media only screen and (max-width: 1280px) {
+            font-size: 16px;
+          }
+
+          @media only screen and (max-width: 1024px) {
+            font-size: 20px !important;
+          }
+
+        }
+
+        &:last-child {
+
+          font-size: 13px;
+          line-height: 21px;
+
+          @media only screen and (max-width: 1280px) {
+            font-size: 10px;
+          }
+
+          @media only screen and (max-width: 1024px) {
+            font-size: 14px !important;
+          }
+
+        }
+
+        a {
+
+          color: $grey-color-eight;
+          pointer-events: none;
+
+          @media only screen and (max-width: 1280px) {
+            font-size: 10px;
+          }
+
+          @media only screen and (max-width: 1024px) {
+            font-size: 14px !important;
+            color: inherit;
+            pointer-events: auto !important;
+          }
+
+        }
+
+      }
+
+      .how-make-order__block {
+
+        border-left: 4px solid $grey-color-eight;
+        transition: all .5s ease-in-out;
+
+        @media only screen and (max-width: 1024px) {
+          border-left: 4px solid $red-color-one !important;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__block-text {
+
+    width: 100%;
+
+  }
+
+  &__block {
+
+    border-left: 4px solid $red-color-one;
+    padding-left: 13px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    padding-right: 23px;
+    margin-left: 49px;
+    transition: all .5s ease-in-out;
+    height: 118px;
+    margin-top: 30px;
+
+    @media only screen and (max-width: 1640px) {
+      margin-left: 0;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      margin-left: 0;
+      padding-right: 0;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      margin-left: 35px;
+      padding-right: 105px;
+      height: 100px;
+      margin-top: 40px;
+
+    }
+
+    @media only screen and (max-width: 992px) {
+      padding-right: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding-right: 40px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-left: 35px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 0;
+      margin-left: 35px;
+    }
+
+    @media only screen and (max-width: 380px) {
+      margin-left: 20px;
+    }
+
+  }
+
+  &__progress {
+
+    position: relative;
+
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+
+  }
+
+  &__parent {
+
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: 1280px) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__line-red {
+
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    transform: translateY(-65%);
+
+    &:before {
+
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      border-top: 1px solid #DE0000;
+
+    }
+
+  }
+
+  &__car {
+
+    @include flex-center-wrap;
+    justify-content: center;
+    position: relative;
+    visibility: hidden;
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+    }
+
+    img {
+
+      display: block;
+      position: relative;
+      z-index: 1000;
+
+    }
+
+
+  }
+
+  &_pb-3 {
+
+    padding-bottom: 3rem;
+
+    @media only screen and (max-width: 1280px) {
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  &_mb-3 {
+
+    margin-bottom: 3rem;
+
+  }
+
+  .text_mb-55 {
+
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .title__h2 {
+
+    @media only screen and (max-width: 480px) {
+      padding: 0 10px 0;
+      background: $white-color-one;
+    }
+
+  }
+
+}

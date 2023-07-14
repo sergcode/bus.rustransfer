@@ -1,0 +1,130 @@
+mixin form-head
+  .form-head.form-head__middle.wow.fadeIn(data-wow-delay='0.6s', data-wow-duration='0.4s')
+    .form-head__middle_header
+      form#payment.needs-validation(role='form' novalidate onsubmit="yaCounter54968869.reachGoal('raschet');return true;")
+        legend
+          h3.title.title__h3.text_uppercase.title__h3_line Получите расчет стоимости аренды автотранспорта
+        legend
+          p.text.text__middle.text_grey-two.text_pb-51 Предложим 2 варианта сметы для Ваших целей и бюджета в течение 10 минут
+
+        fieldset
+          .form-row
+            //.col-6.col-sm-6.col-md-6.col-lg-12.col-xl-12.form-head__input-container.form-head__input-container_d-none
+            //  input#validationTooltipUsername.form-control.form-head__input-theme(type="text" placeholder="" form='payment' autocomplete='off' value="" required data-bind="headForm.name")
+            //  label.form-head__label-theme.text.text__middle_less(for="validationTooltipUsername")
+            //    | Ваше имя *
+            //  .invalid-tooltip
+            //    | Введите свое имя
+            .col-6.col-sm-6.col-md-6.col-lg-12.col-xl-12.form-head__input-container.form-head__input-container_d-none
+              input#validationTooltipUsername.form-control.form-head__input-theme(type="text" placeholder="" form='payment' autocomplete='off' value="")
+              label.form-head__label-theme.text.text__middle_less(for="validationTooltipUsername")
+                | Ваше имя *
+              .invalid-tooltip
+                | Введите свое имя
+            .col-6.col-sm-6.col-md-6.col-lg-12.col-xl-12.form-head__input-container
+              input#validationTooltipPhone.form-control.form-head__input-theme(type="tel" placeholder="" value="" form='payment' autocomplete='off' required data-bind="headForm.phone")
+              label.form-head__label-theme.text.text__middle_less.form-head__label-theme(for="validationTooltipPhone")
+                | Телефон *
+              .invalid-tooltip.invalid-tooltip_delay_second
+                | Не корректный телефон
+            .col-6.col-sm-6.col-md-6.col-lg-12.col-xl-12.form-head__input-container.form-head_mb-2.form-head__input-container_d-none
+              input#validationTooltipEmail.form-control.form-head__input-theme(type="email" placeholder="" form='payment' autocomplete='off')
+              label.form-head__label-theme.text.text__middle_less.form-head__label-theme(for="validationTooltipEmail") Email
+              .invalid-tooltip.invalid-tooltip_delay_last
+                | Не корректный email
+            //.col-6.col-sm-6.col-md-6.col-lg-12.col-xl-12.form-head__input-container.form-head_mb-2.form-head__input-container_d-none
+            //  input#validationTooltipEmail.form-control.form-head__input-theme(type="email" placeholder="" form='payment' autocomplete='off' required data-bind="headForm.email")
+            //  label.form-head__label-theme.text.text__middle_less.form-head__label-theme(for="validationTooltipEmail") Email
+            //  .invalid-tooltip.invalid-tooltip_delay_last
+            //    | Не корректный email
+
+        +button-middle(
+          'Получить расчет',
+          'submit',
+          'button',
+          "roistatGoal.reach({leadName: 'Форма на главном экране «Получите расчет стоимости аренды автотранспорта»', text: 'Форма на главном экране «Получите расчет стоимости аренды автотранспорта»'})"
+          )
+
+mixin form-horizontal
+  .form-horizontal.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+    form#no-standard.form-horizontal__wrapper.needs-validation(role='form' onsubmit="yaCounter54968869.reachGoal('nestandart');return true;" novalidate)
+      fieldset
+        .form-row.form-horizontal_pb-18
+          .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-4.form-horizontal__input-container.form-horizontal_mb-1
+            label.form-horizontal__hidden(for="validationUsername")
+              | Ваше имя *
+            input#validationUsername.form-control.form-horizontal__input-theme(type="text" placeholder="Как к Вам обратиться?" form='no-standard' autocomplete='off' value="" required data-bind="horizontalForm.name")
+            .invalid__wrapper
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Введите свое имя
+          .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-4.form-horizontal__input-container.form-horizontal_mb-1
+            label.form-horizontal__hidden(for="validationPhone")
+              | Телефон *
+            input#validationPhone.form-control.form-horizontal__input-theme(type="tel" placeholder="Контактный телефон для связи" value="" form='no-standard' autocomplete='off' required data-bind="horizontalForm.phone")
+            .invalid__wrapper.invalid__wrapper_delay_second
+              .invalid-tooltip.invalid-tooltip__horizontal.invalid-tooltip_delay_second
+                | Не корректный телефон
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-4.form-horizontal__input-container
+            label.form-horizontal__hidden(for="validationEmail")
+              | Email
+            input#validationEmail.form-control.form-horizontal__input-theme(type="email" placeholder="Ваш E-mail" form='no-standard' autocomplete='off' required data-bind="horizontalForm.email")
+            .invalid__wrapper.invalid__wrapper_delay_last
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Не корректный email
+
+        .button__wrapper.button_pb-2.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          button.button.button__large_red.button__large_middle.mt-auto(
+            type='submit'
+            role='button'
+            onclick="roistatGoal.reach({leadName: 'Форма «У ВАС НЕСТАНДАРТНЫЙ ЗАПРОС?»', text: 'Форма «У ВАС НЕСТАНДАРТНЫЙ ЗАПРОС?»'})") Расчет стоимости
+
+        .form-group
+          .form-check.form-check__horizontal
+            input#invalidCheck.form-check-input(type="checkbox" value="" checked required)
+            label.form-check-label(for="invalidCheck")
+              | Подтверждая отправку формы Я соглашаюсь на обработку персональных данных и с&nbsp;
+              a(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' title='' target='_blank') политикой конфиденциальности
+            .invalid-feedback
+              | Это обязательное поле
+
+mixin form-horizontal-white(colorTheme, checkboxWhite)
+  .form-horizontal.form-horizontal__white.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+    form#important-customer.form-horizontal__wrapper.needs-validation(role='form' onsubmit="yaCounter54968869.reachGoal('vip');return true;" novalidate)
+      fieldset
+        .form-row.form-horizontal_pb-18
+          .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.form-horizontal__input-container
+            label.form-horizontal__hidden(for="validationImportantUsername")
+              | Ваше имя *
+            input#validationImportantUsername.form-control.form-horizontal__input-theme(class=colorTheme type="text" placeholder="Как к Вам обратиться?" form='important-customer' autocomplete='off' value="" required data-bind="importantForm.name")
+            .invalid__wrapper
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Введите свое имя
+          .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.form-horizontal__input-container
+            label.form-horizontal__hidden(for="validationImportantPhone")
+              | Телефон *
+            input#validationImportantPhone.form-control.form-horizontal__input-theme(class=colorTheme type="tel" placeholder="Контактный телефон" value="" form='important-customer' autocomplete='off' required data-bind="importantForm.phone")
+            .invalid__wrapper.invalid__wrapper_delay_second
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Не корректный телефон
+          .col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4.form-horizontal__input-container.form-horizontal_mb-2
+            label.form-horizontal__hidden(for="validationImportantEmail")
+              | Email
+            input#validationImportantEmail.form-control.form-horizontal__input-theme(class=colorTheme type="email" placeholder="Ваш E-mail" form='important-customer' autocomplete='off' required data-bind="importantForm.email")
+            .invalid__wrapper.invalid__wrapper_delay_last
+              .invalid-tooltip.invalid-tooltip__horizontal
+                | Не корректный email
+
+        .button__wrapper.button_pb-2.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+          button.button.button__large_red.button__large_middle.mt-auto(
+            type='submit'
+            role='button'
+            onclick="roistatGoal.reach({leadName: 'Форма «СТАНЬТЕ САМЫМ ВАЖНЫМ НАШИМ КЛИЕНТОМ»', text: 'Форма «СТАНЬТЕ САМЫМ ВАЖНЫМ НАШИМ КЛИЕНТОМ»'})") Стать клиентом
+
+        .form-group.form-group__white
+          .form-check.form-check__horizontal
+            input#invalidImportantCheck.form-check-input(class=checkboxWhite type="checkbox" value="" checked required)
+            label.form-check-label.text_white(for="invalidImportantCheck")
+              | Подтверждая отправку формы Я соглашаюсь на обработку персональных данных и с&nbsp;
+              a(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' title='' target='_blank') политикой конфиденциальности
+            .invalid-feedback
+              | Это обязательное поле

@@ -1,0 +1,61 @@
+mixin customer-retention
+  #modalCustomerRetention.modal.fade.bd-example-modal-xl.customer-retention(tabindex="-1" role="dialog" aria-labelledby="customerRetention" aria-hidden="true")
+    .modal-dialog.modal-dialog-centered.modal-xl
+      .modal-content.customer-retention__wrapper
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+        .customer-retention__content
+          h2.title.title__h2
+            | ПОЛУЧИТЕ БЕСПЛАТНЫЙ РАСЧЕТ СТОИМОСТИ&nbsp;
+            br
+            | И КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА&nbsp;
+            br
+            | ПО ПАССАЖИРСКИМ ПЕРЕВОЗКАМ
+          p.text.text__large_middle
+            | Предложим на выбор легковые автомобили, минивены, микроавтобусы&nbsp;
+            br
+            | и автобусы от эконом до представительского и VIP класса
+          .customer-retention__form
+            .form.form_pr-0.style-form.mt-auto.clear
+              form#customerRetention.clear.form__theme.needs-validation(method='post' action='' role='form' novalidate name='customerRetention' onsubmit="yaCounter54968869.reachGoal('uderganie'); return true;")
+                fieldset
+                  .form-row
+                    .col-lg-12.col-xl-12.form-head__input-container
+                      input#customerRetentionUsername.form-control.form-head__input-theme(
+                      type="text"
+                      placeholder=""
+                      form='customerRetention'
+                      autocomplete='off'
+                      value=""
+                      pattern='^[a-zA-ZА-Яа-яЁё ]+$'
+                      title='Имя может содержать только буквы.'
+                      name='username'
+                      required
+                      data-bind="retentionForm.name"
+                      )
+                      label.form-head__label-theme.text.text__middle_less(for="customerRetentionUsername")
+                        | Введите Ваше имя
+                      .invalid-tooltip
+                        | Это обязательное поле
+
+                    .col-lg-12.col-xl-12.form-head__input-container
+                      input#customerRetentionEmail.form-control.form-head__input-theme(
+                      type="text"
+                      placeholder=""
+                      value=""
+                      name='email'
+                      form='customerRetention'
+                      autocomplete='off'
+                      required
+                      data-bind="retentionForm.email"
+                      )
+                      label.form-head__label-theme.text.text__middle_less.form-head__label-theme(for="customerRetentionEmail")
+                        | Введите Ваш телефон или E-mail
+                      .invalid-tooltip.invalid-tooltip_delay_second
+                        | Это обязательное поле
+
+                .button__wrapper.button__wrapper_visible
+                  button.button.button__large_red.button__large_middle.button_center.mt-auto(type='submit' role='button' onclick="yaCounter54968869.reachGoal('uderganie'); return true;") Получить расчет
+
+
+
+  .modal-backdrop.modal-backdrop_customer.fade.show

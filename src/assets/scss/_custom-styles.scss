@@ -1,0 +1,45 @@
+/* Default styles */
+@import './variables';
+@import './mixins/mixins';
+@import './fonts';
+@import './color-theme';
+@import './theme';
+@import './default';
+@import './jquery.form.styler/jquery.form.styler';
+@import './jquery.form.styler/jquery.form.styler.theme';
+@import './zadarma/zadarma';
+
+/* Components BusRustransfer */
+@import './сomponents/button';
+@import './сomponents/arrow';
+@import './сomponents/numbers-block';
+@import './сomponents/hamburger';
+@import './сomponents/grid';
+@import './сomponents/header';
+@import './сomponents/typography';
+@import './сomponents/form/form-head';
+@import './сomponents/form/form-horizontal';
+@import './сomponents/modal';
+@import './сomponents/wave';
+@import './сomponents/cookie';
+@import './сomponents/404';
+
+/* Header-content style */
+@import './header-content/header-content';
+
+/* Body-content style */
+@import './bus-rent/bus-rent';
+@import './vehicle-options/vehicle-options';
+@import './tariffs/tariffs';
+@import './benefits/benefits';
+@import './how-make-order/how-make-order';
+@import './non-standard/non-standard';
+@import './activity/activity';
+@import './important-customer/important-customer';
+@import './customer-retention/customer-retention';
+
+/* Footer styles */
+@import './footer/footer';
+
+
+

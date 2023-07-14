@@ -1,0 +1,265 @@
+.button {
+
+  transition: all .3s ease !important;
+  font-family: $verdana-regular;
+  font-weight: 100;
+  text-decoration: none;
+  @include inline-flex-center-wrap();
+  text-align: center;
+  justify-content: center;
+  line-height: 3.3em;
+  padding: 0 2rem 0;
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  color: $white-color-one !important;
+  border: 0 !important;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &__wrapper {
+
+    width: 100%;
+    @include flex-wrap;
+    visibility: hidden;
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+    }
+
+    &_center {
+
+      justify-content: center;
+
+    }
+
+    &_visible {
+      visibility: visible;
+    }
+
+  }
+
+  &_pb-2 {
+
+    padding-bottom: 2rem;
+
+  }
+
+  &__large {
+
+    display: flex;
+
+    &_red {
+
+      background: $red-color-two;
+      color: $white-color-one;
+      box-shadow: -2px 2px 2px $black-color-rgba-two;
+      max-width: 405px;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 8px $black-color-rgba-five, 0 0 8px $black-color-rgba-six;
+        color: $white-color-one;
+        text-decoration: none;
+        background: $red-color-three;
+
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+    &_middle {
+
+      max-width: 334px;
+
+    }
+
+    &_mt-auto {
+
+      margin-top: auto;
+
+    }
+
+    &_middle-less {
+
+      max-width: 289px;
+
+    }
+
+  }
+
+  &__middle {
+
+    &_blue {
+
+      background: $blue-color-one;
+      color: $white-color-one;
+      max-width: 300px;
+      box-shadow: 0 2px 4px $black-color-rgba-four;
+      text-align: center;
+      transition: all .3s ease !important;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 8px $black-color-rgba-five, 0 0 8px $black-color-rgba-six;
+        color: $white-color-one;
+        text-decoration: none;
+        background: $blue-color-two;
+
+        .the-arrow.-right > .shaft {
+          width: 35px;
+          position: relative;
+        }
+
+
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+    &_mt-auto {
+
+      margin-top: auto;
+
+    }
+
+  }
+
+
+  &__small {
+
+    &_red {
+
+      background: $red-color-two;
+      color: $white-color-one;
+      max-width: 188px;
+      box-shadow: 0 2px 4px $black-color-rgba-four;
+      text-align: center;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 8px $black-color-rgba-five, 0 0 8px $black-color-rgba-six;
+        color: $white-color-one;
+        text-decoration: none;
+        background: $red-color-three;
+
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+    &_blue {
+
+      background: $blue-color-one;
+      color: $white-color-one;
+      max-width: 188px;
+      box-shadow: 0 2px 4px $black-color-rgba-four;
+      text-align: center;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 8px 8px $black-color-rgba-five, 0 0 8px $black-color-rgba-six;
+        color: $white-color-one;
+        text-decoration: none;
+        background: $blue-color-two;
+
+      }
+
+      @media only screen and (max-width: 360px) {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    }
+
+    &_mt-auto {
+
+      margin-top: auto;
+
+    }
+
+  }
+
+  &_center {
+
+    margin: auto;
+
+  }
+
+}
+
+.button {
+
+  &__shadow {
+
+    &_left {
+
+      box-shadow: -2px 4px 4px $black-color-rgba-seven;
+      transition: all .5s ease;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: -13px 20px 27px $black-color-rgba-three;
+
+      }
+
+    }
+
+    &_center {
+
+      box-shadow: 0 4px 4px $black-color-rgba-seven;
+      transition: all .5s ease;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 20px 27px $black-color-rgba-three;
+
+      }
+
+    }
+
+    &_right {
+
+      box-shadow: 2px 4px 4px $black-color-rgba-seven;
+      transition: all .5s ease;
+
+      &:hover {
+
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 13px 20px 27px $black-color-rgba-three;
+
+      }
+
+    }
+
+  }
+
+  &_pb-2 {
+
+    padding-bottom: 2rem;
+
+  }
+
+}

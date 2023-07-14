@@ -1,0 +1,5 @@
+mixin title(h2, subtitle, positionLine, colorBg, indentBottom, indentTop, display)
+  .title__justify_center
+    .title__wrapper.text_center.title__line(class!=positionLine, class!=indentTop, class!=indentBottom)
+      h2.title.title__h2(class!=colorBg)=h2
+    p.text.text__large.text_center(class!=indentBottom, class!=display)=subtitle

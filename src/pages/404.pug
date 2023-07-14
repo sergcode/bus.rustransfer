@@ -1,0 +1,35 @@
+extends ../templates/layouts/default-404
+
+block vars
+  -
+    title = 'Home'
+    stylePath=''
+
+block content
+  .main.main__404.wow.fadeIn(role='main', data-wow-delay='0', data-wow-duration='0.4')
+    section.header.header__404
+      .container.container__customized_xl
+        nav.nav-menu(role='navigation')
+          .row
+            .col.nav-menu__logo_align-center
+              a.nav-menu__logo.wow.fadeInDown(href='/' role='banner' data-wow-delay='0.5' data-wow-duration='0.4')
+                +logo
+
+    section.content-404
+      .container.container__customized_xl.container__customized_404
+        .row.justify-content-center
+          .col
+            .content-404__wrapper
+              article
+                figure
+                  .content-404__img
+                    img.wow.fadeInUp(src='../assets/img/404.png' data-wow-delay='0.5' data-wow-duration='0.4')
+                  figcaption
+                    .content-404__title
+                      p.wow.fadeInUp(data-wow-delay='0.5' data-wow-duration='0.4') Страница не найдена
+
+                    .text.text__middle.text_white.text_mb-55.wow.fadeInUp(data-wow-delay='0.5' data-wow-duration='0.4') Эта страница была удалена или никогда не существовала попробуйте вернуться назад или перейти на&nbsp;
+                      a.text.text__middle.text_white(href='/' title='Вернуться на главную страницу' role='link') главную страницу
+
+                    +button-middle-showquiz('Перейти на главную', '/', 'button')
+

@@ -1,0 +1,36 @@
+mixin button-large(title, button, position)
+
+  .button__wrapper.button_pb-2.wow.fadeInUp(class=position data-wow-delay='0.5s', data-wow-duration='0.4s')
+    a.button.button__large_red.mt-auto(onclick="Marquiz.showModal('5e88a785a4ee0a0044b40634')" role=button)=title
+
+mixin button-large-middle-less(title, button, position)
+  .button__wrapper.button__wrapper_center.button_pb-2.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+    a.button.button__large_red.button__large_middle.button__large_middle-less.mt-auto(role=button onclick="Marquiz.showModal('5e88a785a4ee0a0044b40634')" class=position)=title
+
+mixin button-middle(title, submit, button, on_click)
+
+  button.button.button__middle_blue.mt-auto(role=button type=submit onclick=on_click)=title
+    .the-arrow.-right
+      .shaft
+
+mixin button-middle-showquiz(title, button)
+
+  a.button.button__middle_blue.mt-auto.wow.fadeInUp(onclick="Marquiz.showModal('5e88a785a4ee0a0044b40634')" role=button data-wow-delay='0.5s' data-wow-duration='0.4s')=title
+    .the-arrow.-right
+      .shaft
+
+mixin button-small-blue(title, button, addClass, cookie)
+
+  a.button.button__small_blue.mt-auto.wow.fadeInUp(role=button class=addClass href=cookie data-wow-delay='0.5s', data-wow-duration='0.4s')=title
+
+mixin button-small-red(title, button, addClass)
+
+  a.button.button__small_red.mt-auto.wow.fadeInUp(role=button class=addClass onclick="Marquiz.showModal('5e88a785a4ee0a0044b40634')" data-wow-delay='0.5s', data-wow-duration='0.4s')=title
+
+mixin button-large-middle-form(title, button, addClass)
+
+  .button__wrapper.button__wrapper_hidden.button_pb-2.wow.fadeInUp(data-wow-delay='0.5s', data-wow-duration='0.4s')
+    a.button.button__large_red.button__large_middle.mt-auto(role=button class=addClass onclick="Marquiz.showModal('5e88a785a4ee0a0044b40634')")=title
+
+
+

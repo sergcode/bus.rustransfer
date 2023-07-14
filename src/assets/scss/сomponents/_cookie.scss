@@ -1,0 +1,94 @@
+.cookie {
+
+  position: fixed;
+  width: 100%;
+  padding: 37px 0;
+  bottom: 0;
+  background: $white-color-rgba-four;
+  box-shadow: 0 -2px 4px $black-color-rgba-six;
+  z-index: 1000000000000000;
+  display: none;
+  align-items: center;
+  align-content: center;
+  font-size: 16px;
+  font-family: $verdana-regular;
+  color: $black-color-one;
+
+  @media only screen and (max-width: 991.98px) {
+    padding: 20px 0;
+  }
+
+  &__text {
+
+    @media only screen and (max-width: 991.98px) {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+
+    a {
+
+      font-size: 16px;
+      font-family: $verdana-regular;
+      color: $red-color-one;
+      text-decoration: underline;
+
+      &:hover {
+
+        text-decoration: none;
+
+      }
+
+    }
+
+  }
+
+  .cookie-button {
+
+    height: 48px;
+    padding: 0 2rem;
+    margin: 0 10px 0;
+    visibility: visible !important;
+
+    @media only screen and (max-width: 360px) {
+      margin: 0 10px 1rem;
+    }
+
+  }
+
+  &__settings {
+
+    @media only screen and (max-width: 1280px) {
+      flex: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  &__wrapper-button {
+
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1280px) {
+      flex: 100%;
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 360px) {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &_mb-1 {
+
+    @media only screen and (max-width: 1280px) {
+      margin-bottom: 1rem;
+    }
+
+  }
+
+}

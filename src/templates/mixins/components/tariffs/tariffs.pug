@@ -1,0 +1,84 @@
+mixin tariffs(classauto, places, car, modelauto, cost, button, delay)
+  .col-sm-12.col-md-6.col-lg-4.mb-4.tariffs-block__wrapper
+    .tariffs-block(class!= attributes.class, data-wow-delay!= delay)
+      .tariffs-block__line.text_center
+        h4.title.title__h4.title__bg_white.tariffs-block__title=classauto
+      p.text.text__middle_less.tariffs-block__small-text=places
+      .tariffs-block__img-car
+        img(src=car, alt='')
+      p.text.text__middle_less.text_center.tariffs-block__small-text.mb-3!=modelauto
+      p.text.text__middle_less.tariffs-block__cost
+        | от&nbsp;
+        span.title.title__h4=cost
+        | &nbsp;руб/ч
+      +button-small-red('Выбрать', 'button', '')(class='button__wrapper_center button_pb-2')=button
+
++tariffs(
+  'МИНИВЭН',
+  'до 7 мест',
+  '/assets/img/tariffs/minibus-1.png',
+  'Mercedes-Benz Viano, Ford Tourneo, <br/>Mercedes Benz V-class',
+  '1 200',
+  'Заказать'
+
+)(class="button__shadow_left wow fadeInUp")
+
+
++tariffs(
+  'МИКРОАВТОБУС',
+  '11-15 мест',
+  '/assets/img/tariffs/minibus-2.png',
+  'Toyota Hiace, Volkswagen Transporter, <br/>Hyundai H1 ',
+  '1 300',
+  'Заказать',
+  '0.3s'
+
+)(class="button__shadow_center wow fadeInUp")
+
+
++tariffs(
+  'МИКРОАВТОБУС',
+  '16-18 мест',
+  '/assets/img/tariffs/minibus-3.png',
+  'Mercedes-Benz Sprinter, Citroen Jumper, <br/>Ford Transit',
+  '1 400',
+  'Заказать',
+  '0.5s'
+)(class="button__shadow_right wow fadeInUp")
+
+
++tariffs(
+  'МИКРОАВТОБУС',
+  'до 20 мест',
+  '/assets/img/tariffs/minibus-4.png',
+  'Volkswagen Crafter, Renault Master, <br/>Mercedes-Benz Sprinter ',
+  '1 500',
+  'Заказать',
+  '0.7s'
+
+)(class="button__shadow_left wow fadeInUp")
+
+
++tariffs(
+  'Автобус',
+  '28-35 мест',
+  '/assets/img/tariffs/minibus-5.png',
+  'Hyundai AeroTown, Higer <br/>и подобные',
+  '1 800',
+  'Заказать',
+  '0.9s'
+)(class="button__shadow_center wow fadeInUp")
+
+
++tariffs(
+  'Автобус',
+  '45+ мест',
+  '/assets/img/tariffs/minibus-6.png',
+  'Neoplan, MAN, King Long, <br/>Higer',
+  '1 900',
+  'Заказать',
+  '1.1s'
+)(class="button__shadow_right wow fadeInUp")
+
+
+

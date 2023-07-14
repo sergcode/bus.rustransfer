@@ -1,0 +1,148 @@
+.important-customer {
+
+  width: 100%;
+  position: relative;
+  background: url("#{$way-img}important-customer/background.jpg")no-repeat center / cover;
+  padding-top: 150px;
+
+  @media only screen and (max-width: 1920px) {
+    background: url("#{$way-img}important-customer/background.jpg")no-repeat center right 15% / 1920px;
+  }
+
+  @media only screen and (max-width: 1640px) {
+    background: url("#{$way-img}important-customer/background.jpg")no-repeat center right 15% / cover;
+  }
+
+  @media only screen and (max-width: 1420px) {
+    background: url("#{$way-img}important-customer/background.jpg")no-repeat center right 20% / cover;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    background: url("#{$way-img}important-customer/background.jpg")no-repeat center left 0 / cover;
+  }
+
+  @media only screen and (max-width: 992px) {
+    background: url("#{$way-img}important-customer/background.jpg")no-repeat center left 0 / cover;
+  }
+
+  &__block-icon {
+
+    article {
+
+      padding-bottom: 3rem;
+
+      figure {
+
+        display: flex;
+
+        p {
+
+          font-family: $verdana-regular;
+
+          @media only screen and (max-width: 1280px) {
+
+            font-size: 14px;
+
+          }
+
+        }
+
+      }
+
+    }
+
+    &_icon {
+
+      width: 46px;
+      min-width: 46px;
+      margin-right: 23px;
+      justify-content: center;
+      @include flex-wrap;
+
+      @media only screen and (max-width: 480px) {
+        width: 31px;
+        min-width: 31px;
+      }
+
+    }
+
+  }
+
+  &_pr-30 {
+
+    padding-right: 30%;
+
+    @media only screen and (max-width: 1024px) {
+      padding-right: 0;
+    }
+
+  }
+
+  .title__h2 {
+
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+
+  }
+
+  .button__large_middle {
+
+    @media only screen and (max-width: 1280px) {
+      max-width: 233px;
+    }
+
+  }
+
+  .button__wrapper {
+
+    &_hidden {
+
+      justify-content: center;
+      display: none;
+
+      @media only screen and (max-width: 768px) {
+        display: flex;
+      }
+
+      .button__large_red {
+
+        display: block;
+
+      }
+
+    }
+
+  }
+
+
+  .title__line_small:before {
+
+    @media only screen and (max-width: 480px) {
+      top: 15px;
+      transform: translateY(0);
+      margin-left: -10px;
+      width: 7%;
+    }
+
+    @media only screen and (max-width: 380px) {
+      top: 15px;
+      transform: translateY(0);
+      width: 5%;
+    }
+
+    @media only screen and (max-width: 320px) {
+      width: 12%;
+    }
+
+  }
+
+  .text__middle {
+
+    @media only screen and (max-width: 480px) {
+      text-align: center;
+    }
+
+  }
+
+}

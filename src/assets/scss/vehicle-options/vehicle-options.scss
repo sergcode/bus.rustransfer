@@ -1,0 +1,27 @@
+.vehicle-options {
+
+  background: $grey-color-six;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding-top: 2rem;
+  }
+
+
+  .title__line:before {
+
+    @media only screen and (max-width: 480px) {
+      top: 15px;
+      transform: translateY(0);
+      margin-left: -10px;
+      width: 10%;
+    }
+
+  }
+
+}

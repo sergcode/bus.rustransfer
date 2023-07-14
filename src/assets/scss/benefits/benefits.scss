@@ -1,0 +1,336 @@
+.benefits {
+
+  background-image: url("#{$way-img}benefits/benefits-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  background-color: $white-color-one;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 200px;
+  padding-top: 90px;
+
+  @media only screen and (max-width: 1640px) {
+    padding-bottom: 150px;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    padding-bottom: 100px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    background-size: 140%;
+    padding-bottom: 100px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    padding-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding-bottom: 35px;
+  }
+
+  &:after {
+
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-right: -5%;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    background: url("#{$way-img}benefits/Employment-Agency-1080x1080.png")no-repeat center bottom / contain;
+
+    @media only screen and (max-width: 1640px) {
+      display: block;
+      margin-right: 10%;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      margin-right: 5%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      margin-right: -3%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      margin-right: 30px;
+      width: 450px;
+      height: 450px;
+      background: url("#{$way-img}benefits/Employment-Agency-1080x1080.png")no-repeat center bottom -60px / contain;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-right: -20px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  .justify-content-center {
+
+    @media only screen and (max-width: 1640px) {
+      justify-content: left !important;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      justify-content: left !important;
+    }
+
+  }
+
+  &__block {
+
+    background: $grey-color-seven;
+    padding: 51px 24px 33px;
+    height: 100%;
+    @include flex-wrap;
+    box-shadow: 0 4px 4px $black-color-rgba-seven;
+    z-index: 1000;
+    visibility: hidden;
+
+    @media only screen and (max-width: 992px) {
+      visibility: visible;
+    }
+
+    figure {
+
+      @include flex-wrap;
+      justify-content: center;
+
+      @media only screen and (max-width: 576px) {
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+      }
+
+    }
+
+    @media only screen and (max-width: 1640px) {
+      height: 394px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      height: 100%;
+      padding: 31px 15px 33px;
+    }
+
+  }
+
+  &__img-car {
+
+    margin-bottom: 37px;
+    opacity: .6;
+
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-bottom: 0;
+      width: 112px;
+      min-width: 112px;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+
+    svg {
+
+      height: 65px;
+
+      @media only screen and (max-width: 992px) {
+        height: 46px;
+      }
+
+      @media only screen and (max-width: 576px) {
+        height: 55px;
+      }
+
+    }
+
+  }
+
+  &__title {
+
+    font-family: $font-family-bold;
+    padding-bottom: 30px;
+    text-align: center;
+    display: block;
+
+    @media only screen and (max-width: 992px) {
+      padding-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      text-align: left;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      text-align: center;
+    }
+
+    br {
+
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+
+    }
+
+  }
+
+  &__small-text {
+
+    position: relative;
+    justify-content: flex-start;
+
+    &:after {
+
+      content: '';
+      position: relative;
+      width: 35px;
+      height: 2px;
+      background: $red-color-one;
+      display: none;
+      margin-top: 1.5rem;
+
+      @media only screen and (max-width: 576px) {
+        display: block;
+      }
+
+      @media only screen and (max-width: 480px) {
+        display: none;
+      }
+
+    }
+
+  }
+
+  &__line-red {
+
+    width: 100%;
+    margin-top: auto;
+    @include flex-wrap;
+    justify-content: center;
+    position: relative;
+
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+
+    &:before {
+
+      content: '';
+      position: relative;
+      width: 35px;
+      height: 2px;
+      background: $red-color-one;
+      display: block;
+
+    }
+
+  }
+
+  &__line {
+
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    @media only screen and (max-width: 576px) {
+      text-align: left;
+    }
+
+    @media only screen and (max-width: 480px) {
+      text-align: center;
+    }
+
+    p {
+
+      br {
+
+        display: none;
+
+        @media only screen and (max-width: 576px) {
+          display: block;
+        }
+
+        @media only screen and (max-width: 480px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__col-custom {
+
+    @media only screen and (max-width: 1640px) {
+      flex: 0 0 33.33333333%;
+      max-width: 33.33333333%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      flex: 0 0 33.33333333%;
+      max-width: 33.33333333%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media only screen and (max-width: 576px) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+  &_pb-4 {
+
+    padding-bottom: 4rem;
+
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 0;
+    }
+
+  }
+
+  .text_mb-70 {
+
+    @media only screen and (max-width: 480px) {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .title__line:before {
+
+    @media only screen and (max-width: 480px) {
+      top: 15px;
+      transform: translateY(0);
+      margin-left: -10px;
+      width: 10%;
+    }
+
+    @media only screen and (max-width: 320px) {
+      width: 6%;
+    }
+
+  }
+
+}

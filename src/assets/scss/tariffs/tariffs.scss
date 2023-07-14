@@ -1,0 +1,186 @@
+.tariffs-block {
+
+  position: relative;
+  @include flex-center-wrap();
+  background: #fff;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  flex-direction: column;
+
+  @media only screen and (max-width: 768px) {
+    height: 470px;
+    margin-bottom: 60px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 500px;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
+  }
+
+  &__title {
+
+    padding: 0 30px 0;
+
+    @media only screen and (max-width: 576px) {
+      background: $white-color-one;
+    }
+
+  }
+
+  &__line {
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+
+    &:before {
+
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      border-top: 1px solid $red-color-one;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+
+    }
+
+  }
+
+  &__small-text {
+
+    padding-bottom: 5px;
+    color: $grey-color-two;
+
+    @media only screen and (max-width: 1280px) {
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }
+
+    br {
+
+      @media only screen and (max-width: 1280px) {
+        display: none;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+
+    }
+  }
+
+  &__cost {
+
+    color: $black-color-one;
+    margin-bottom: 1.5rem;
+    display: flex;
+
+  }
+
+  &__img-car {
+
+    height: 161px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    @include flex-center-wrap();
+    transition: all .5s ease;
+
+    @media only screen and (max-width: 1280px) {
+      height: 120px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      justify-content: center;
+      height: 150px;
+    }
+
+    img {
+
+      position: relative;
+      display: block;
+
+      @media only screen and (max-width: 1280px) {
+        width: auto;
+        height: 100px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: auto;
+        height: 110px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 90%;
+        height: auto;
+      }
+
+    }
+
+  }
+
+  &:hover {
+
+    .tariffs-block__img-car {
+
+      transform: scale(1.1);
+
+      @media only screen and (max-width: 480px) {
+        transform: scale(1.05);
+      }
+
+    }
+
+  }
+
+}
+
+.owl-carousel-tariffs {
+
+  display: none !important;
+
+  .owl-item {
+
+    position: relative;
+
+    .item {
+
+      position: relative;
+
+    }
+
+    img {
+
+      @media only screen and (max-width: 768px) {
+        width: auto !important;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 90% !important;
+      }
+
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: block !important;
+  }
+
+}

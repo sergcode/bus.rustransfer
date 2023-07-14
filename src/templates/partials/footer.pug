@@ -1,0 +1,147 @@
+- var imgStatic = "https://static.rustransfer.org/icon/";
+
+footer#footer.footer.footer__theme(role='contentinfo')
+  .container.container__customized_xl.container__customized_sm
+    .row.justify-content-between
+      .footer__smart_d-flex.footer__col.col.footer__d-flex.wow.fadeInRight(data-wow-delay='0.5s', data-wow-duration='0.4s')
+        a.footer__logo.footer__logo_mb-1-5(href='', title='Логотип Рустрансфер' role='link')
+          +logo-footer
+        .footer__copy
+          p
+            | &copy;&nbsp;
+            script.
+              var mdate = new Date(); document.write(mdate.getFullYear());
+            |, ООО &laquo;РусТрансфер&raquo;
+          p ИНН:&nbsp;2367007357
+          p КПП:&nbsp;236601001
+          p ОГРН:&nbsp;1192375006515
+        a.footer__political(href='https://static.rustransfer.org/docs/politika_konfidencialnosti.pdf' target='_blank' title='Политика конфиденциальности' role='link')
+          p Политика конфиденциальности
+        a.footer__political(href='https://static.rustransfer.org/docs/public-offer-rustransfer-ooo.pdf' target='_blank' title='Публичная оферта' role='link')
+          p Публичная оферта
+
+      .footer__col.col.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.4s')
+        p.footer__title Контакты
+        ul.footer__phone
+          li
+            a(href='tel:+78002004017' role='link' title='Сделать звонок') +7-800-200-4017
+            span Круглосуточно
+          li
+            a(href='tel:+78002004017' role='link' title='Сделать звонок') +7-495-128-3601
+            span Москва
+          li
+            a(href='tel:+78126037550' role='link' title='Сделать звонок') +7-812-603-7550
+            span Санкт-Петербург
+          li
+            a(href='tel:+78432070209' role='link' title='Сделать звонок') +7-843-207-0209
+            span Казань
+          li
+            a(href='tel:+78622792425' role='link' title='Сделать звонок') +7-862-279-2425
+            span Сочи
+          li
+            a(href='tel:+12023502717' role='link' title='Сделать звонок') +1-202-350-2717
+            span Вашингтон
+          li
+            a(href='tel:+7(923)500-82-82' role='link' title='Сделать звонок') +7(923)500-82-82
+            .w-100
+            a.messenger(href='whatsapp://send?phone=+79235008282' title='' target='_blank' role='link')
+              span
+                +whatsapp
+            a.messenger(href='viber://chat?number=+79235008282' title='' target='_blank' role='link')
+              span
+                +viber
+            a.messenger.messenger__no-event(title='')
+              span
+                +telegram
+
+      .footer__center_xs.col.order-1.order-sm-1.order-md-1.order-lg-1.wow.fadeInRight(data-wow-delay='0.7s', data-wow-duration='0.4s')
+        p.footer__title.footer__title_sm Обратная связь
+        ul.footer__feedback
+          li
+            a(href='mailto:24@rustransfer.org' role='link')
+              span 24@rustransfer.org
+          li
+            a(href='mailto:a.kuleshov@rustransfer.org' role='link')
+              span
+                | Обратная связь с генеральным&nbsp;
+                br
+                | директором
+          li
+            a(href='mailto:org@rustransfer.org' role='link')
+              span
+                | Обращение к комплайнс-
+                br
+                | контролеру
+
+      .footer__center_xs.footer__col_lg.col.order-1.order-sm-1.order-md-2.order-lg-2.wow.fadeInRight(data-wow-delay='0.8s', data-wow-duration='0.4s')
+        .footer__row
+          .footer__stretch
+            .footer__subscribers.footer__subscribers_desctop
+              p.footer__title.footer__title_md Договора оферты:
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='http://moscow.megafon.ru/popups/oferta_m_payment.html' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'megafon.png' alt='Логотип Мегафон')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='https://www.yota.ru/downloads/forms/oferta_m_platezh.pdf' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'yota.png' alt='Логотип Yota')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='https://pay.mts.ru/webportal/terms-account/' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'mts.png' alt='Логотип MTS')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='http://moskva.beeline.ru/customers/products/mobile/services/details/mobilnyy-platezh/' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'beeline.jpg' alt='Логотип Beeline')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='https://market.tele2.ru/offer/' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'tele2.png' alt='Логотип Tele2')
+              div.footer__subscribers_row
+                a.footer__subscribers_icon-wrapper(href='http://www.ribank.ru/images/doc/oferta_ESP_Mixplat.pdf' target='_blank' title='Ознакомиться с договором оферты')
+                  img(src=imgStatic+'mixplat.jpg' alt='Логотип Mixplat')
+              div.footer__subscribers_mt-auto
+                | Комиссия с абонента — 0%
+
+          .footer__stretch.footer__stretch_wrap
+            .footer__networck.footer__networck_desctop
+              p.footer__title.footer__title_md Мы в соцсетях
+              a(href='https://vk.com/rustransfer2019' title='Перейти в группу Рустрансфер Вконтакте' target='_blank' role='link')
+                span
+                  +vk
+              a(href='https://twitter.com/TransferRus' title='Перейти в группу Рустрансфер в Twitter' target='_blank' role='link')
+                span
+                  +twitter
+              a(href='https://www.instagram.com/rustransfers/' title='Перейти в группу Рустрансфер в Instagram' target='_blank' role='link')
+                span
+                  +instagram
+              a(href='https://www.facebook.com/rustransfers/?modal=admin_todo_tour' title='Перейти в группу Рустрансфер в Facebook' target='_blank' role='link')
+                span
+                  +facebook
+
+            .footer__pay.footer__pay_desctop
+              p.footer__title.footer__title_md Принимаем к оплате
+              span
+                +visa
+              span
+                +mir
+              span
+                +mastercard
+
+        .footer__stretch_flex-direction.footer__robocassa_md
+          p.footer__title.footer__title_md.footer__title_right Оплата услуг
+          script(type="text/javascript", src="https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?MerchantLogin=Rustransfer&InvoiceID=0&Culture=ru&Encoding=utf-8&Description=%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0&DefaultSum=100&SignatureValue=c42f4e25bb51b2db11841ad93200ebbe")
+
+      .footer__col_lg.footer__col.order-2.order-sm-2.order-md-2.order-lg-2.footer__robocassa_sm.wow.fadeInRight(data-wow-delay='0.8s', data-wow-duration='0.4s')
+        .footer__stretch.footer__stretch_flex-direction
+          p.footer__title.footer__title_md Оплата услуг
+          script(type="text/javascript", src="https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?MerchantLogin=Rustransfer&InvoiceID=0&Culture=ru&Encoding=utf-8&Description=%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B0%D0%B2%D1%82%D0%BE%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0&DefaultSum=100&SignatureValue=c42f4e25bb51b2db11841ad93200ebbe")
+
+
+.bg__menu(title='Закрыть меню')
+
++cookie
+
++modal-success
+
++modal-unsuccess
+
++customer-retention
+
+include ../../templates/include/footer-scripts
